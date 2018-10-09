@@ -26,11 +26,11 @@ class Stack < Thor
     end
 
     # do run update check in the start command only
-    updates = UpdateChecker.new
-    updates.run
+    #updates = UpdateChecker.new
+    #updates.run
 
-    upgrades = UpgradeChecker.new
-    upgrades.run
+    #upgrades = UpgradeChecker.new
+    #upgrades.run
 
     begin
       config = DockerSync::ProjectConfig.new(config_path: options[:config])
